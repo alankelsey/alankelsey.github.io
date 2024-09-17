@@ -48,7 +48,7 @@ function updateUI() {
     todoList.forEach((todoElement, todoIndex) => {
         newInnerHTML += `
         <div class="todo">
-                <p>${todoElement}</p>
+                <textArea maxlength="73">${todoElement}</textArea>
                 <div class="btnContainer" onclick="editTodo(${todoIndex})">
                     <button class="iconBtn">
                         <i class="fa-solid fa-pen-to-square"></i>
