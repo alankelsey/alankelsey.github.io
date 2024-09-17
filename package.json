@@ -1,0 +1,87 @@
+{
+  "name": "calankelsey.github.io",
+  "version": "1.0.0",
+  "description": "A Cypress test example for alankelsey.github.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alankelsey/alankelsey.github.io"
+  },
+  "author": "alankelsey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alankelsey/alankelsey.github.io/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@cypress/code-coverage": "^3.10.0-dev.1",
+    "@cypress/instrument-cra": "1.4.0",
+    "@cypress/vite-dev-server": "^5.0.7",
+    "@percy/cypress": "3.1.2",
+    "cypress": "^13.7.1",
+    "dotenv": "16.0.0",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "8.10.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-cypress": "3.5.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "json": "11.0.0",
+    "npm": "^9.8.0"
+  },
+  "scripts": {
+    "precypress:open": "yarn predev:cognito:ci",
+    "cypress:open": "cypress open",
+    "cypress:open:mobile": "cypress open --config '{\"e2e\":{\"viewportWidth\":375,\"viewportHeight\":667}}'",
+    "cypress:run": "cypress run",
+    "cypress:run:component": "cypress run --component",
+    "cypress:run:mobile": "cypress run --config '{\"e2e\":{\"viewportWidth\":375,\"viewportHeight\":667}}'",
+    "test": "yarn cypress:open",
+    "test:headless": "yarn cypress:run"
+  },
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "cypress/globals": true
+    },
+    "plugins": [
+      "cypress",
+      "prettier"
+    ],
+    "rules": {
+      "no-unused-expressions": 0
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn types"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "percy": {
+    "version": 1,
+    "snapshot": {
+      "widths": [
+        1280
+      ]
+    }
+  },
+  "nyc": {
+    "reporter": [
+      "html",
+      "json"
+    ]
+  },
+  "packageManager": "yarn@1.22.22"
+}
