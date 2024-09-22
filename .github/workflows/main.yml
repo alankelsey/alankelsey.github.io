@@ -46,7 +46,8 @@ jobs:
       fail-fast: false
       matrix:
         # run copies of the current job in parallel
-        containers: [1, 2, 3, 4, 5]
+        # containers: [1, 2, 3, 4, 5]
+        containers: [1]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -63,10 +64,16 @@ jobs:
       - name: __e Dir
         run: ls /__e
 
+      - name: ParentDirinfo
+        run: ls ../
+
+      - name: CurrrentDirinfo
+        run: ls 
+
       - name: "UI Tests - Chrome"
         uses: cypress-io/github-action@v6
         with:
-          build: npx cypress
+          # build: npx cypress
           start: npx cypress run
           wait-on: "http://localhost:52007"
           wait-on-timeout: 120
