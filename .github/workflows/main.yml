@@ -24,12 +24,12 @@ jobs:
       - run: node --version
       - run: node -p 'os.cpus()'
 
-      - name: Save build folder
-        uses: actions/upload-artifact@v4
-        with:
-          name: github-pages
-          if-no-files-found: error
-          path: /actions/runs/10982816819/artifacts/1963476197/github-pages.zip
+    #   - name: Save build folder
+    #     uses: actions/upload-artifact@v4
+    #     with:
+    #       name: github-pages
+    #       if-no-files-found: error
+    #       path: https://github.com/alankelsey/alankelsey.github.io/actions/runs/10982816819/artifacts/1963476197
 
   ui-chrome-tests:
     timeout-minutes: 15
@@ -51,11 +51,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Download the build folders
-        uses: actions/download-artifact@v4
-        with:
-          name: github-pages
-          path: /home/runner/work/_temp/artifact.tar
+    #   - name: Download the build folders
+    #     uses: actions/download-artifact@v4
+    #     with:
+    #       name: github-pages
+    #       path: /home/runner/work/_temp/artifact.tar
 
       - name: Node info
         run: node -v
