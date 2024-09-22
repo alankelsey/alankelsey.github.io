@@ -20,7 +20,7 @@ jobs:
         with:
           runTests: false
       # report machine parameters
-      - run: yarn cypress info
+      - run: npx cypress --version
       - run: node --version
       - run: node -p 'os.cpus()'
 
@@ -67,15 +67,15 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           build: yarn cypress info
-          start: yarn start:ci
+          start: npx cypress open
           wait-on: "http://localhost:3000"
           wait-on-timeout: 120
           browser: chrome
           record: true
           parallel: true
           group: "UI - Chrome"
-          spec: cypress/tests/ui/*
-          config-file: cypress.config.ts
+          spec: /tests/cypress/e2e/
+          config-file: /tests/cypress.config.ts
         env:
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
