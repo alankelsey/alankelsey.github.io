@@ -66,7 +66,7 @@ jobs:
       - name: "UI Tests - Chrome"
         uses: cypress-io/github-action@v6
         with:
-          build: yarn cypress info
+          build: npx cypress
           start: npx cypress run
           wait-on: "http://localhost:52007"
           wait-on-timeout: 120
@@ -74,8 +74,8 @@ jobs:
           record: true
           parallel: true
           group: "UI - Chrome"
-          spec: /tests/cypress/e2e/
-          config-file: /tests/cypress.config.js
+          spec: /__w/alankelsey.github.io/alankelsey.github.io/tests/cypress/e2e/
+          config-file: /__w/alankelsey.github.io/alankelsey.github.io/tests/cypress.config.js
         env:
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
