@@ -1,0 +1,55 @@
+{
+  "QA Management Questions": {
+    "Leadership": [
+      "Can you share a specific example of a QA initiative you led that resulted in significant improvements in service quality?",
+      "How do you approach mentoring and guiding a team of QA engineers to ensure high performance and continuous development?",
+      "Describe a time when you had to lead a team through a significant change. How did you motivate your team and ensure alignment with strategic goals?",
+      "How do you manage cross-functional teams, especially when dealing with internal and external stakeholders with competing priorities?"
+    ],
+    "Strategy and Process Improvement": [
+      "What is your approach to identifying areas for improvement within existing QA processes? Can you provide an example of a successful process enhancement you led?",
+      "How do you ensure that process improvements are sustainable and scalable across the organization?",
+      "Can you describe a time when you developed and implemented a quality assurance program from scratch? What were the key components, and how did you measure its success?",
+      "Tell us about a specific instance where you identified a process or individual performance gap. What steps did you take to address it, and what was the outcome?",
+      "Can you give an example of how you have prioritized activities and developed tactical plans to achieve strategic objectives in a quality assurance program?",
+      "How do you monitor and report on the performance of quality assurance processes? Can you provide an example of a successful improvement you’ve led?"
+    ],
+    "Compliance and Risk Mitigation": [
+      "How do you ensure that all customer interactions comply with regulatory requirements? Can you provide an example of a time when you had to mitigate a significant legal risk?",
+      "Describe a time when you identified a potential compliance issue. How did you address it, and what was the outcome?",
+      "How do you ensure a culture of ethics, integrity, and compliance within your team or organization? Can you provide an example?"
+    ],
+    "Industry Knowledge": [
+      "What experience do you have with healthcare insurance products, and how have you applied this knowledge in quality assurance or compliance roles?",
+      "How do you stay current with changes in healthcare regulations and standards, and how do you incorporate these changes into your quality management practices?"
+    ]
+  },
+  "QA Engineer Questions": {
+    "Technical Skills": [
+      "What tools and methodologies have you used for defect tracking, reporting, and process improvement in a quality assurance setting?",
+      "How do you approach analyzing complex business processes and data sets to identify opportunities for improvement?",
+      "How have you ensured compliance with regulatory standards such as NCQA, CMS, or state regulations in your previous roles?",
+      "Describe a situation where you had to manage and mitigate legal risks related to customer interactions."
+    ],
+    "Analytical Skills": [
+      "Describe a time when you analyzed complex data or customer feedback to drive an impactful improvement in your QA processes. What was the outcome?",
+      "How do you balance data-driven decision-making with your QA instincts?",
+      "How have you used data analytics to drive strategic decisions in your previous roles? Can you give an example of how data led to a significant improvement in customer satisfaction?"
+    ],
+    "Process Improvement": [
+      "Can you describe a time when you developed and implemented a quality management strategy? What were the outcomes?"
+    ],
+    "Compliance": [
+      "How do you stay updated with regulatory requirements and ensure compliance in your QA practices?"
+    ]
+  },
+  "SDET Questions": {
+    "Technical Expertise": [
+      "Can you discuss your experience optimizing AI-driven customer interactions? How did you ensure these interactions aligned with company standards and enhanced the customer experience?",
+      "What strategies have you used to leverage technology to improve QA processes and outcomes?"
+    ],
+    "Automation": [
+      "In your experience, how do you approach optimizing AI-driven customer interactions? What challenges have you faced, and how did you overcome them?"
+    ]
+  }
+}
