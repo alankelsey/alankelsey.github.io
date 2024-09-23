@@ -66,7 +66,7 @@ jobs:
       #   run: ls /__e
 
       - name: CurrrentDirinfo
-        run: ls __w/alankelsey.github.io/alankelsey.github.io/tests/cypress/e2e/
+        run: ls /__w/alankelsey.github.io/alankelsey.github.io/tests/cypress/e2e/
 
       - name: "UI Tests - Chrome"
         uses: cypress-io/github-action@v6
