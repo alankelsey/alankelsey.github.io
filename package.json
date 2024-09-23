@@ -31,11 +31,10 @@
     "precypress:open": "yarn predev:cognito:ci",
     "cypress:open": "cypress open",
     "cypress:open:mobile": "cypress open --config '{\"e2e\":{\"viewportWidth\":375,\"viewportHeight\":667}}'",
-    "cypress:run": "cypress run",
+    "cypress:run": "npx cypress run",
     "cypress:run:component": "cypress run --component",
     "cypress:run:mobile": "cypress run --config '{\"e2e\":{\"viewportWidth\":375,\"viewportHeight\":667}}'",
-    "test": "yarn cypress:open",
-    "test:headless": "yarn cypress:run"
+    "test": "yarn cypress:open"
   },
   "engines": {
     "node": "^18.0.0 || >=20.0.0"
