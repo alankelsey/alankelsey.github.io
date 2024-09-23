@@ -72,7 +72,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           # build: npx cypress
-          start: npx cypress run --config-file /__w/alankelsey.github.io/alankelsey.github.io/tests/cypress.config.js   
+          start: npx cypress run --config-file /__w/alankelsey.github.io/alankelsey.github.io/tests/cypress.config.js --spec-file tests/cypress/**/*
       #     wait-on: "http://localhost:52007"
       #     wait-on-timeout: 120
       #     browser: chrome
