@@ -1,9 +1,6 @@
 name: Cypress Tests
 
-on:
-  push:
-    branches-ignore:
-      - "renovate/**"
+on: [push]
 
 jobs:
   install:
@@ -59,20 +56,13 @@ jobs:
     #       name: github-pages
     #       path: /home/runner/work/_temp/artifact.tar
 
-      # - name: Node info
-      #   run: node -v
-
-      # - name: __e Dir
-      #   run: ls /__e
-
-      - name: CurrrentDirinfo
-        run: ls /__w/alankelsey.github.io/alankelsey.github.io/tests/cypress/e2e/
-
-      - name: "UI Tests - Chrome"
-        uses: cypress-io/github-action@v6
+      - name: "Cypress tests - Chrome"
+        uses: ./
         with:
           # build: npx cypress
-          start: npx cypress run
+          start: cypress run
+          working-directory: examples/basic
+          build: npx cypress info
       #     wait-on: "http://localhost:52007"
       #     wait-on-timeout: 120
       #     browser: chrome
