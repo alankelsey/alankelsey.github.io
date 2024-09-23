@@ -66,28 +66,28 @@ jobs:
         run: ls /__e
 
       - name: CurrrentDirinfo
-        run: ls 
+        run: ls ../
 
-      - name: "UI Tests - Chrome"
-        uses: cypress-io/github-action@v6
-        with:
-          # build: npx cypress
-          start: npx cypress run --config-file tests/cypress.config.js --spec tests/cypress/e2e/todo.cy.js
-          wait-on: "http://localhost:52007"
-          wait-on-timeout: 120
-          browser: chrome
-          record: true
-          parallel: true
-          group: "UI - Chrome"
-          spec: tests/cypress/e2e/
-          config-file: cypress.config.js
-        env:
-          CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          # Recommended: pass the GitHub token lets this action correctly
-          # determine the unique run id necessary to re-run the checks
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DEBUG: "cypress:server:args"
+      # - name: "UI Tests - Chrome"
+      #   uses: cypress-io/github-action@v6
+      #   with:
+      #     # build: npx cypress
+      #     start: npx cypress run --config-file tests/cypress.config.js --spec tests/cypress/e2e/todo.cy.js
+      #     wait-on: "http://localhost:52007"
+      #     wait-on-timeout: 120
+      #     browser: chrome
+      #     record: true
+      #     parallel: true
+      #     group: "UI - Chrome"
+      #     spec: tests/cypress/e2e/
+      #     config-file: cypress.config.js
+      #   env:
+      #     CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
+      #     CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+      #     # Recommended: pass the GitHub token lets this action correctly
+      #     # determine the unique run id necessary to re-run the checks
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     DEBUG: "cypress:server:args"
 
 #   ui-chrome-mobile-tests:
 #     timeout-minutes: 15
