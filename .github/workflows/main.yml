@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: showdir.........
-        run: ls /__w/alankelsey.github.io/alankelsey.github.io/
+        run: ls ./
 
       - name: Cypress run
         # normally you would write
