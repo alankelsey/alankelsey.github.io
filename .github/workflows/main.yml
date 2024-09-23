@@ -79,7 +79,7 @@ jobs:
       #     record: true
       #     parallel: true
       #     group: "UI - Chrome"
-          spec: tests/cypress/e2e/*
+          spec: tests/cypress/**/*
           config-file: /__w/alankelsey.github.io/alankelsey.github.io/tests/cypress.config.js
       #   env:
       #     CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
