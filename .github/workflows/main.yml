@@ -27,7 +27,7 @@ jobs:
         with:
           working-directory: ./
           browser: chrome
-          spec: tests/cypress/e2e/todo.cy.js"
+          spec: tests/cypress/e2e/todo.cy.js
           config-file: tests/cypress.config.js
           # just for full picture after installing Cypress
           # print information about detected browsers, etc
