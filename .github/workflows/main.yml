@@ -61,8 +61,8 @@ jobs:
         with:
           # build: npx cypress
           start: cypress run
-          working-directory: examples/basic
-          build: npx cypress info
+          working-directory: tests/
+          # build: npx cypress info
       #     wait-on: "http://localhost:52007"
       #     wait-on-timeout: 120
       #     browser: chrome
