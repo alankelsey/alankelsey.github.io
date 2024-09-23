@@ -56,13 +56,12 @@ jobs:
     #       name: github-pages
     #       path: /home/runner/work/_temp/artifact.tar
 
-      - name: "Cypress tests - Chrome"
-        uses: ./
+
+      - name: "UI Tests - Chrome"
+        uses: cypress-io/github-action@v6
         with:
           # build: npx cypress
           start: cypress run
-          working-directory: examples/basic
-          build: npx cypress info
       #     wait-on: "http://localhost:52007"
       #     wait-on-timeout: 120
       #     browser: chrome
