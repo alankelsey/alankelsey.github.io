@@ -66,13 +66,13 @@ jobs:
       #   run: ls /__e
 
       - name: CurrrentDirinfo
-        run: ls
+        run: ls __w/alankelsey.github.io/alankelsey.github.io/tests/cypress/e2e/
 
       - name: "UI Tests - Chrome"
         uses: cypress-io/github-action@v6
         with:
           # build: npx cypress
-          start: npx cypress run --config-file /__w/alankelsey.github.io/alankelsey.github.io/tests/cypress.config.js --spec /__w/alankelsey.github.io/alankelsey.github.io/tests/cypress/e2e/
+          start: npx cypress run --config-file /__w/alankelsey.github.io/alankelsey.github.io/tests/cypress.config.js --spec /__w/alankelsey.github.io/alankelsey.github.io/tests/cypress/e2e/      
       #     wait-on: "http://localhost:52007"
       #     wait-on-timeout: 120
       #     browser: chrome
