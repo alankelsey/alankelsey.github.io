@@ -72,7 +72,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           # build: npx cypress
-          start: npx cypress run --config-file tests/cypress.config.js --spec "cypress/e2e/todo.cy.js"
+          start: npx cypress run --config-file tests/cypress.config.js --spec "tests/cypress/e2e/todo.cy.js"
           wait-on: "http://localhost:52007"
           wait-on-timeout: 120
           browser: chrome
