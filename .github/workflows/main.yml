@@ -19,6 +19,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           runTests: false
+          config-file: cypress.config.js
       # report machine parameters
       - run: npx cypress --version
       - run: node --version
@@ -64,8 +65,8 @@ jobs:
       - name: __e Dir
         run: ls /__e
 
-      - name: ParentDirinfo
-        run: cd tests/
+      - name: Change Dir
+        run: cd tests
 
       - name: CurrrentDirinfo
         run: ls 
