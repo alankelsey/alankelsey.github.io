@@ -15,6 +15,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: showdir.........
+        uses: ls ../
+
       - name: Cypress run
         # normally you would write
         uses: cypress-io/github-action@v6
