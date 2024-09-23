@@ -65,9 +65,6 @@ jobs:
       - name: __e Dir
         run: ls /__e
 
-      - name: Change Dir
-        run: cd tests
-
       - name: CurrrentDirinfo
         run: ls 
 
