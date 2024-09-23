@@ -19,11 +19,11 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           runTests: false
-          config-file: cypress.config.js
+          config-file: /__w/alankelsey.github.io/alankelsey.github.io/tests/cypress.config.js
       # report machine parameters
-      - run: npx cypress --version
-      - run: node --version
-      - run: node -p 'os.cpus()'
+      # - run: npx cypress --version
+      # - run: node --version
+      # - run: node -p 'os.cpus()'
 
     #   - name: Save build folder
     #     uses: actions/upload-artifact@v4
@@ -59,14 +59,14 @@ jobs:
     #       name: github-pages
     #       path: /home/runner/work/_temp/artifact.tar
 
-      - name: Node info
-        run: node -v
+      # - name: Node info
+      #   run: node -v
 
-      - name: __e Dir
-        run: ls /__e
+      # - name: __e Dir
+      #   run: ls /__e
 
       - name: CurrrentDirinfo
-        run: ls ../
+        run: ls
 
       - name: "UI Tests - Chrome"
         uses: cypress-io/github-action@v6
