@@ -23,6 +23,9 @@ jobs:
         # because we are running these examples in a monorepo
         with:
           working-directory: ./
+          browser: chrome
+          spec: tests/cypress/e2e/todo.cy.js"
+          config-file: tests/cypress.config.js
           # just for full picture after installing Cypress
           # print information about detected browsers, etc
           # see https://on.cypress.io/command-line#cypress-info
