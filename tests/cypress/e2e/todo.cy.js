@@ -34,8 +34,6 @@ describe('example to-do app', () => {
 
     cy.addTodo(`${newItem}`)
     cy.get('body > section > div > div > div > button:nth-child(1)').click()
-
-    // cy.get('body > form > textarea').should('have.text', newItem)
     cy.get('body > form > textarea').clear().type('test')
     cy.get('#addBtn').click()
 
