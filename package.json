@@ -28,14 +28,11 @@
     "npm": "^9.8.0"
   },
   "scripts": {
-    "precypress:open": "yarn predev:cognito:ci",
     "cypress:open": "cypress open",
     "cypress:open:mobile": "cypress open --config '{\"e2e\":{\"viewportWidth\":375,\"viewportHeight\":667}}'",
     "cypress:run": "cypress run",
     "cypress:run:component": "cypress run --component",
-    "cypress:run:mobile": "cypress run --config '{\"e2e\":{\"viewportWidth\":375,\"viewportHeight\":667}}'",
-    "test": "yarn cypress:open",
-    "test:headless": "yarn cypress:run"
+    "cypress:run:mobile": "cypress run --config '{\"e2e\":{\"viewportWidth\":375,\"viewportHeight\":667}}'"
   },
   "engines": {
     "node": "^18.0.0 || >=20.0.0"

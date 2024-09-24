@@ -8,14 +8,11 @@ describe('example to-do app', () => {
     cy.visit('/')
   })
 
-  it.only('can add new todo items', () => {
+  const newItem = 'Feed the cat'
+
+  it('can add new todo items', () => {
     // We'll store our item text in a variable so we can reuse it
     // const newItem = 'Feed the cat'
-    const newItem = 'this us a test'
-    console.log(newItem.length)
-
-    // cy.get('body > form > textarea').type(`${newItem}`)
-    // cy.get('#addBtn').click()
 
     cy.addTodo(`${newItem}`)
 
@@ -25,7 +22,23 @@ describe('example to-do app', () => {
       .should('have.text', newItem)
   })
 
-  // it('can check off an item as completed', () => {
-  
-  // })
+  it.only('can check off an item as completed', () => {
+
+    cy.addTodo(`${newItem}`)
+    cy.get('body > section > div > div > div > button:nth-child(2)').click()
+
+    cy.get('body > section > div').should('not.contain', newItem)
+  })
+
+  it.only('can edit an wxisting item', () => {
+
+    cy.addTodo(`${newItem}`)
+    cy.get('body > section > div > div > div > button:nth-child(1)').click()
+
+    // cy.get('body > form > textarea').should('have.text', newItem)
+    cy.get('body > form > textarea').clear().type('test')
+    cy.get('#addBtn').click()
+
+    cy.get('body > section > div').should('contain', 'test')
+  })
 })
