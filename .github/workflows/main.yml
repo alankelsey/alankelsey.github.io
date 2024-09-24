@@ -9,7 +9,7 @@ on:
 
 jobs:
 
-  basic-ubuntu-20:
+  ubuntu-chrome:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
