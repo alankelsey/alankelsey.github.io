@@ -86,8 +86,10 @@ class QuestionList {
     const ul = document.createElement('ul');
     questions.forEach((questionText) => {
       const li = document.createElement('li');
+      
       li.textContent = questionText;
       ul.appendChild(li);
+      ul.appendChild(document.createElement('br'));
     });
 
     questionListDiv.appendChild(ul);
