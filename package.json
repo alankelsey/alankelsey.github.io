@@ -11,7 +11,9 @@
   "bugs": {
     "url": "https://github.com/alankelsey/alankelsey.github.io/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
   "devDependencies": {
     "@cypress/code-coverage": "^3.10.0-dev.1",
     "@cypress/instrument-cra": "1.4.0",

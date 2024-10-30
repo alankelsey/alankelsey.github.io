@@ -6,9 +6,9 @@
     <title>TODOS</title>
     <link rel="stylesheet" href="styles/questions-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header></header>
@@ -16,29 +16,15 @@
     <section>
         <div class="questionsContainer">
             <div class="questionItems">
-                <h1><Categories</h1>
-                
-                <li><div id="category-links"></div> <!-- This will hold the clickable links --></li>
-                <ul>
-                    <ul class="nested">
-                            <ul>
-                                <span class="caret">Knowledge Area</span>
-                                <ul class="nested">
-                                    <li> 
-                                        <div id="subcategory-links"></div> <!-- This will display the question details -->     
-                                    </li>
-                                        <ul>
-                                            <ul class="nested">
-                                                <li> 
-                                                    <div id="questions"></div> <!-- This will display the question details -->     
-                                                </li>
-                                            </ul>
-                                        </ul>
-                                </ul>
-                            </ul>  
-                    </ul>
-                </ul>
-            </div>          
+                <h2>Categories</h2>
+                <div id="category-links"></div> <!-- For clickable category links -->
+
+                <h3 id="subcategories-heading" style="display: none;">Subcategories</h3>
+                <div id="subcategory-links"></div> <!-- For clickable subcategory links -->
+
+                <h3 id="questions-heading" style="display: none;">Questions</h3>
+                <div id="questions"></div> <!-- For displaying questions -->
+            </div>
         </div>
     </section>
     <footer></footer>
