@@ -5,19 +5,15 @@
 }
 
 h1, h2, h3 {
+    font-size: 1.2em;
     font-family: 'Montserrat', sans-serif;
-    color: #2e7dd5;
+    color: #333;
     text-align: center;
     margin: 10px 0;
 }
 
 h2 {
     font-size: 1.6em;
-}
-
-h3 {
-    font-size: 1.2em;
-    color: #333;
 }
 
 body {
